@@ -1,0 +1,66 @@
+﻿.divImage{
+	border: 1px black solid;
+	width: 200px;
+	height: 250px;
+	text-align: center;
+	cursor:pointer
+}
+
+.buttons{
+	width: 50px;
+	height:50px;
+	text-align:center;
+	border:1px black solid;
+	background:white;
+	margin-right:350px;
+	border: 1px black solid
+	
+
+}
+
+.popularDiv .cellImages{
+	width: 150px;
+	height: 150px
+}
+
+
+.cellImages div{
+	border:1px black solid;
+	text-align: center;
+	background-color:rgb(222,230,255)
+}
+
+.buttons:hover ,.show:hover{
+	background-color:rgb(234,231,252);
+}
+
+.divButtons{
+	float:left;
+	clear:left
+}
+
+a{
+	text-decoration:none;
+	font-weight:bold
+}
+
+table{
+	padding: 12px 12px 20px 12px;
+	/*background-color:rgb(222,230,255)*/
+	/*background-image:url('brick.jpg')*/
+	/*background-image:url('wood.jpg');*/
+	background-color:transparent;
+	margin-bottom:20px	
+}
+
+.show{
+	width:30px;
+	height: 150px;
+	border:1px black solid;
+	background-color:white
+}
+
+.cornerCell{
+	width:30px;
+	height: 150px;
+}

@@ -1,0 +1,72 @@
+﻿img{
+	width:250px;
+	height: 250px;
+	border-radius:50%
+	
+}
+
+.star{
+	margin-left:30%
+}
+
+.ratingTable td{
+	border: 1px black solid
+}
+
+
+.ratingTable .thirdcol{
+	width: 200px
+}
+
+.ratingTable{
+	margin: 30px 0px 30px 50px
+}
+
+.userComments{
+
+	vertical-align:top;
+	height: 250px;
+	width: 250px;
+}
+
+
+.firstDiv{
+	border: 1px solid black;
+	margin: 3px 3px 3px 3px;
+	background-color:white;
+	height:13px
+
+}
+
+.secondDiv{
+	background-color:rgb(0,250,154);
+	height:100%;
+	text-align:left
+}
+
+.starColor{
+	color:yellow;
+
+}
+
+.starHeader{
+	font-size: 70px;
+	color:yellow;
+}
+
+.container{
+	width: 100%;
+	text-align:center;
+	margin-bottom:70px
+	
+}
+
+#userTable{
+	float:right;
+	margin-right:220px
+}
+
+.empty{
+	width: 50px
+}
+

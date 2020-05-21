@@ -1,0 +1,102 @@
+﻿p#statement {
+	margin-left:28%;
+	font-size:18px;
+	padding-bottom:15px;
+	padding-top:7px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+div#boxcontent {
+	margin-left:30%;
+	margin-right:30%;
+	border: black solid 1px;
+	padding:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+table#detailRe {
+	width:300px;
+}
+
+table#detailRe tr td {
+	padding:5px;
+}
+
+img.receiptImg {
+	width:200px;
+	height:300px;
+	border: black solid 1px;
+	float:left;
+	cursor:not-allowed;
+}
+
+td.titleRe {
+	text-align:center;
+	text-decoration:underline;
+	font-size:18px;
+	padding:10px;
+	letter-spacing:1.5px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+img#logo {
+	width:180px;
+	height:45px;
+}
+
+p {
+	font-size:18px;
+	text-decoration:underline;
+	letter-spacing:1px;
+	margin-left:10px;
+	padding-bottom:1px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+table.meetpay {
+	margin-left:10px;
+	padding-bottom:8px;
+	width:80%;
+
+}
+
+table.meetpay tr td {
+	padding:5px;
+	width:170px;
+}
+
+div#button {
+	float:right;
+	margin-left:30%;
+	margin-right:30%;
+	border:none;
+	padding:17px;
+}
+
+input[type=button] {
+	color:white;
+	background-color:#0000b3;
+	border:none;
+	width:150px;
+	height:40px;
+	cursor: pointer;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
+button.btn {
+  background-color:#0000b3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  width:150px;
+  height:40px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>popularDiv</title>
+<link type="text/css" rel="stylesheet" href="popularDiv.css"/>
+<script type="text/javascript" src="homeJava.js"></script>
+
+</head>
+
+<body>
+	
+<div class="popularDiv" >	
+	<table>
+	
+	<tbody>		
+	<tr>
+			<td rowspan="3" class="cellImages"><div>Top 1</div><img  class="divImage" src="tamadun.jpg"  id="demo" alt="" style="height: 350px; width:250px" title="click to view details" usemap="#book1Links"/></td>
+			<td rowspan="3" class="cellImages"><div>Top 2</div><img  class="divImage" src="english.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" alt="" title="click to view details" onclick="top.frames['pageContent'].location.href='book2.html'"/></td>
+			<td rowspan="3" class="cellImages"><div>Top 3</div><img  class="divImage" src="probability.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" alt="" title="click to view details" onclick="top.frames['pageContent'].location.href='book3.html'"/></td>
+			<td class="cornerCell"></td>
+	</tr>
+	<tr><td class="show" ><a href="showMore.htm">Show more</a></td></tr>
+	<tr><td class="cornerCell"></td></tr>
+	
+	</tbody>
+</table>
+
+<map name="book1Links" id="book1Links">
+	<area shape="rect" coords="0,0,246,350" alt="book1" href="book1.html" target="pageContent"/>
+</map>
+	
+</div>	
+	
+</body>
+
+</html>

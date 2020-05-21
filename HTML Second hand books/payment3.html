@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>payment3</title>
+<link href="payment.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div class="paymentPage">
+		<table class="topbar">
+			<tr>
+				<td>
+					<div class="back">
+						<div class="triangle-left" title="Back to product detail page"></div>
+						<a href="book3.html" title="Back to product detail page"> BACK</a>
+					</div>
+				</td>
+				
+				<td>
+					<div class="home">
+						<a href="home.htm" target="pageContent" title="Back to home page"> BACK TO HOME</a>
+						<div class="triangle-right" title="Back to home page"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<hr/>
+		
+<!-----------------------------content--------------------------->	
+
+		<h2>A) Payment</h2>
+		
+		<div class="payment">
+		
+			<table id="picture" style="text-align:center">
+				<tr>
+					<td><img src="probability.jpg" alt="probability"/></td>                                          
+				</tr>
+				
+				<tr>
+					<td>Probability And Statistic</td>
+				</tr>
+				
+				<tr>
+					<td class="seller">Seller: Chia Ah Lim</td>
+				</tr>
+			</table>
+			
+			<table class="payment" cellpadding="10">
+				<tr>
+					<td class="title">Total</td>
+					<td>: RM 15.00</td>
+				</tr>
+				
+				<tr>
+					<td class="title">Name</td>
+					<td>: Wong Kah Wai</td>
+				</tr>
+				
+				<tr>
+					<td class="title">Contact no</td>
+					<td>: 018 - 213 2345</td>
+				</tr>
+			</table>
+		
+		</div>
+	
+	<hr style="clear:both"/>
+	
+	<h2>B) Meet &#38; Pay</h2>
+		<form name="myForm" onsubmit="return validateForm()" method="post">
+				<table class="detail" cellpadding="8px" >
+					<tr class="meetpay">
+						<td>					
+							Date: <input type="text" name="date" id="date" placeholder=" 14/4/2019"/>					
+						</td>
+										 
+						<td>				
+							Time: <input type="text" name="time" id="time" placeholder=" 4.30pm"/>
+						</td>			
+						
+					</tr>
+					
+					<tr class="meetpay">
+						<td colspan="2">
+							Venue: <input type="text" name="venue" id="venue" placeholder=" TARUC Canteen 1"/>
+						</td>			
+					</tr>	
+				</table>
+		</form>	
+			
+		<h2 id="pmethod">C) Payment Method</h2>
+			<table class="detail" align="center">
+				<tr>
+					<td class="paymethod"><input type="radio" onclick="javascript:creditcardCheck();" name="method" id="creditcard"/>Credit Card</td>					
+					<td class="paymethod"><input type="radio" onclick="javascript:cashCheck();" name="method" id="cash"/>Cash</td>
+					<td class="paymethod"><input type="radio" onclick="javascript:paypalCheck();" name="method" id="paypal"/>Paypal</td>
+				</tr>
+				
+			</table>
+		
+		
+			<div id="ifCcard" style="display:none">
+				<form action="receipt3.html" method="get" id="ifCcard">
+								<label for="cname">Name on Card*</label>
+								<input type="text" id="cname" name="cardname" placeholder="Wong Kah Wai" required/>
+					            <label for="ccnum">Credit card number*</label>
+					            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required/>
+					            <label for="expmonth">Exp Month*</label>
+					            <input type="text" id="expmonth" name="expmonth" placeholder="October" required/>
+					            <label for="expyear">Exp Year*</label>
+					            <input type="text" id="expyear" name="expyear" placeholder="2018" required/>
+					            <label for="cvv">CVV*</label>
+					            <input type="text" id="cvv" name="cvv" placeholder="352" required/> 		    													
+								<button type="submit" value="Submit">Submit</button>
+				</form>	
+			</div>
+	
+		<div id="ifPaypal" style="display:none">
+					<label>Click picture to proceed...</label>			
+					<img src="ppalLogo.jpg" alt="ppalLogo" usemap="#ppalLogo" id="ppalLogo"/>
+					<map name="ppalLogo">
+					<area shape="rect" coords="0, 0, 60, 30" href="https://www.paypal.com/my/signin" target="_blank" alt="ppalLogo" title="Paypal"/>
+					</map>				
+			</div>
+
+<!-----------------------Continue button to next page-------------------------------->
+	<input  type="submit" id="continue" name="continue" title="Continue" value="CONTINUE"/>
+	<script type="text/javascript">
+
+	document.getElementById("continue").onclick = function() {
+		location.href = "receipt3.html";
+	};
+	
+	function  valueChanged() {
+		if (document.getElementById("creditcard").checked == true) {
+			document.getElementById("creditcard").value = 1;
+			document.getElementById("cash").value = 0;
+			document.getElementById("paypal").value = 0;
+		} else if (document.getElementById("cash").checked == true) {
+				   document.getElementById("cash").value = 1;
+				   document.getElementById("creditcard").value = 0;			   
+				   document.getElementById("paypal").value = 0;
+		} else { 
+				document.getElementById("creditcard").value = 0;
+				document.getElementById("cash").value = 0;
+				document.getElementById("paypal").value = 1;
+		}
+		console.log(document.getElementById("creditcard").value);
+		console.log(document.getElementById("cash").value);
+		console.log(document.getElementById("paypal").value)
+	}	
+	</script>
+	
+	<script type="text/javascript">
+		function creditcardCheck() {
+			document.getElementById('ifCcard').style.display = 'block';	
+			document.getElementById('ifPaypal').style.display = 'none';			
+		}
+
+		function cashCheck() {
+			document.getElementById('ifCcard').style.display = 'none';
+			document.getElementById('ifPaypal').style.display = 'none';	
+		}
+
+		function paypalCheck() {
+			document.getElementById('ifCcard').style.display = 'none';
+			document.getElementById('ifPaypal').style.display = 'block';	
+		}
+
+	</script>
+	
+</div>
+</body>
+
+</html>

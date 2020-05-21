@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" href="profile.css" type="text/css"/>
+<script language="javascript" src="signup.js"></script>
+<title>proflie</title>
+<style>
+img{
+	border-radius:50px;
+	height:150px;
+	width:150px;
+}
+input[type=file]{ 
+ background-image:ulr('logo.png')
+}
+
+</style>
+<script>
+  window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img = document.querySelector('img');  // $('img')[0]
+          img.src = URL.createObjectURL(this.files[0]); // set src to file url
+          img.onload = imageIsLoaded; // optional onload event listener
+      }
+  });
+});
+
+function imageIsLoaded(e) { alert(e); }  
+</script>
+</head>
+
+<body>
+<table>
+
+
+<tr><td><div style="padding-left:100px"><img id="myImg" src="#"width=100 /></div></td></tr>
+<tr><td><div style="padding-left:50px"><input type='file'/></div></td></tr>
+
+
+
+                    <tr><td><label for="firstname">First Name</label></td></tr>
+                    <tr><td><input type="text" placeholder="Cheng" name="firstname"></td></tr>
+                    <tr><td><label for="lastname">Last Name</label></td></tr>
+                    <tr><td><input type="text" placeholder="Chia Shun" name="lastname"></td></tr>
+                    <tr><td><label for="email">Email</label></td></tr>
+                    <tr><td><input type="text" placeholder="shunshun0922@hotmail.com" name="email"></td></tr>
+                    <tr><td><label for="psw">Password</label></td></tr>
+                    <tr><td><input type="text" name="password"/></td></tr>
+                    <tr><td><label for="phonenumber">Phone Number</label></td></tr>
+                    <tr><td><input type="text" placeholder="0123456789" name="phonenumber"></td></tr>
+
+                    <div class="2">
+                        <tr><td>
+                           
+                            <div style="padding-left:80px;"><button type="button"  name="submit" class="signupbtn"  onclick="window.location.href='home.htm'">Save and Change</button>
+                           </div></td></tr>
+                    </div>
+                </table>
+
+
+</body>
+
+</html>

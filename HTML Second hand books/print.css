@@ -1,0 +1,88 @@
+﻿div#printpage {
+	margin-left:10%;
+	margin-right:10%;
+}
+
+td.button {
+	width:25%;
+	border-right:black solid 1px;
+}
+
+input#print, input#cancel {
+	width:145px;
+	height:45px;
+	text-align:center;
+	color:white;
+	background-color:#0000b3;
+	border-style:none;
+	float:right;
+	cursor:pointer;
+
+}
+
+table#buttons {
+	float:right;
+}
+
+table#buttons tr td {
+	padding:27px;
+}
+
+div#boxcontent {
+	margin-top:10%;
+	margin-left:5%;
+	margin-right:25%;
+	border: black solid 1px;
+	padding:17px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+table#detailRe {
+	width:300px;
+}
+
+table#detailRe tr td {
+	padding:5px;
+}
+
+img.printImg{
+	width:200px;
+	height:300px;
+	border: black solid 1px;
+	float:left;
+}
+
+td.titleRe {
+	text-align:center;
+	text-decoration:underline;
+	font-size:18px;
+	padding:17px;
+	letter-spacing:1.5px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-size:18px;
+	text-decoration:underline;
+	letter-spacing:1px;
+	margin-left:10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+table.meetpay {
+	margin-left:10px;
+	padding-bottom:8px;
+	width:80%;
+
+}
+
+table.meetpay tr td {
+	padding:5px;
+	width:170px;
+}
+
+
+
+

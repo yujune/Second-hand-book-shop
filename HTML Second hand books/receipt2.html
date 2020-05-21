@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>receipt2</title>
+<link href="receipt.css" type="text/css" rel="stylesheet"/>
+
+<!----add icon libraby----->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+
+<p id="statement"><b>Your booking is successful. Below is the receipt. </b></p>
+
+<div id="boxcontent">
+	
+	<table style="width:100%">
+		<tr>
+			<td>
+			<img src="Logo.PNG" alt="logo" id="logo" height="50" width="150" style="margin-left:25px;"/></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" class="titleRe">Receipt</td>
+		</tr>
+		
+		<tr>
+			<td>
+					
+				<table id="detailRe">
+					<tr>
+						<td>Order Number: Q1B218042019</td>
+					</tr>
+					<tr>
+						<td>Buyer: Wong Kah Wai</td>
+					</tr>
+					<tr>
+						<td>Buyer Contact No.: 018 - 213 2345</td>
+					</tr>
+					<tr>
+						<td>Seller: Tan Ah Meng</td>
+					</tr>
+					<tr>
+						<td>Seller Contact No.: 017 - 134 2394</td>
+					</tr>
+					<tr>
+						<td>Payment Status: Paid</td>
+					</tr>
+					<tr>
+						<td>Total: RM 12.00</td>
+					</tr>
+				</table>
+					
+			</td>
+			
+			<td>
+				<img src="english.jpg" alt="English For Malaysian" id="book2" class="receiptImg"/>
+			</td>
+		</tr>
+	</table>
+	
+	<p>Meet &#38; Pay</p>
+
+	<table class="meetpay">
+		<tr>
+			<td>Date: 18/4/2019</td>
+			<td>Time: 4.00pm</td>
+		</tr>
+		<tr>
+			<td colspan="2">Venue: TARUC Main Gate</td>
+		</tr>
+	</table>
+</div>
+
+<div id="button">
+	<a href="receipt2.jpg" target="_blank">
+	<button class="btn"><i class="fa fa-download"></i> Download</button>
+	</a>
+	<input type="button" value="Print" id="print" title="Print"/>
+		<script type="text/javascript">
+		document.getElementById("print").onclick = function() {
+			location.href = "print2.html";
+		};
+		</script>
+
+	<input type="button" value="Back to Home" id="backtohome" title="Back to home" onclick="location.href='home.htm'"/>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="signup.css" type="text/css"/> -->
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="signup.css" type="text/css"/>
+</head>
+
+<body>
+
+    <div id="id01"class="modal">
+        <form class="modal-content" name="myForm"  action="home.htm" target="pageContent" onsubmit="return validateForm()"
+        method="post" >
+
+            <div class="1">
+                <h1>Hi!Nice To Meet You</h1>
+                <table>
+                    <tr><td><label for="firstname">First Name</label></td></tr>
+                    <tr><td><input type="text" placeholder="Enter Fisrt Name" name="firstname"></td></tr>
+                    <tr><td><label for="lastname">Last Name</label></td></tr>
+                    <tr><td><input type="text" placeholder="Enter Last Name" name="lastname"></td></tr>
+                    <tr><td><label for="email">Email</label></td></tr>
+                    <tr><td><input type="text" placeholder="Enter Email" name="email"></td></tr>
+                    <tr><td><label for="psw">Password</label></td></tr>
+                    <tr><td><input type="text" placeholder="Enter Password" name="psw"></td></tr>
+                    <tr><td><label for="pswRepeat">Repeat Password</label></td></tr>
+                    <tr><td><input type="text" placeholder="Repeat Password" name="pswRepeat"></td></tr>
+                    <tr><td><label for="phonenumber">Phone Number</label></td></tr>
+                    <tr><td><input type="text" placeholder="Enter Phone Number" name="phonenumber"></td></tr>
+                   
+                    <div class="2">
+                        <tr><td>
+                            
+                            <div style="padding-left:60px;"><button type="submit" value="submit" name="submit" class="signupbtn">Sign Up</button>
+                            <button type="button" class="cancelbtn"  onclick="window.location.href='home.htm'" >Cancel</button></div>
+                        </td></tr>
+                    </div>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
