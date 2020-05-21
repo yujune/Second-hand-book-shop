@@ -1,0 +1,108 @@
+﻿div {
+	margin-left:150px;
+}
+
+
+img.menubook {
+	margin-left:20%;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-right:25px;
+	float:left;	
+	cursor: not-allowed;
+	height:300px;
+	width:200px;
+	
+}
+
+table#bookDetail {
+	margin-top:20px;
+	margin-bottom:10px;
+	padding:10px;
+		
+}
+
+table#bookDetail tr td {
+	padding:8px;
+	
+}
+
+table#contactMethod {
+	clear:both;
+	margin-left:23%;
+}
+
+table#contactMethod tr td {
+	padding-right:20px;
+}
+
+tr#bookTitle {
+	font-size:35px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+td.detail {
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+input {
+	width:126px;
+	height:33px;
+	margin-left:3px;
+	margin-right:5px;
+	color:white;
+	background-color:#0000b3;
+	border-style:none;
+	cursor: pointer;
+}
+
+
+h2 {
+	margin-left:156px;
+	margin-top:20px;
+	margin-bottom:15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+tr#top {
+	font-size:16px;
+	padding-bottom:7px;
+	padding-top:7px;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+img.popular {
+	padding-left:46px;
+	padding-right:46px;
+	height:300px;
+	width:200px;
+}
+
+img.popular map {
+	cursor: pointer;
+}
+
+tr.bookName {
+	font-size:25px;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
+tr.bookName td a {
+	cursor: pointer;
+}
+
+td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+img.method {
+	width:35px;
+	height:35px;
+}
+
+
+

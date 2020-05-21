@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Add to Cart1</title>
+<link href="cart.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<h2 id="title">Your Cart</h2>
+
+<div id="cart">
+
+<img src="tamadun.jpg" alt="tamadun"/>
+
+<table>
+	<tr><td><h2>Tamadun Islam</h2></td></tr>
+	<tr><td id="viewProfile"><a href="book1.html" title="Click to view profile" class="viewProfile">View Profile</a></td></tr>
+	<tr ><td id="price">Price: RM 10.00</td></tr>
+	<tr>
+		<td id="buttons">
+			<input type="button" value="BUY" title="Click to Buy" id="buy"/>
+			<button onclick="myFunction()" title="Remove From Cart"><span class="remove" >Remove From Cart</span></button>
+		</td>
+	</tr>
+</table>
+
+</div>
+<!-------------------Javascript----------------------->
+<script type="text/javascript">
+	document.getElementById("buy").onclick = function() {
+		location.href = "payment1.html";
+	};
+</script>
+
+<script type="text/javascript">
+var closebox = document.getElementsByClassName("remove");
+var i;
+
+for (i = 0; i < closebox.length; i++) {
+	closebox[i].addEventListener("click", function() {
+		document.getElementById("cart").style.display = 'none';
+		document.writeln("<h2>Your Cart</h2>");
+		document.writeln("<p>Your cart is empty. Go and add some...</p>");
+
+	});
+}
+</script>
+
+</body>
+
+</html>

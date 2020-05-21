@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Book1</title>
+<link href="book.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<div>
+<img src="tamadun.jpg" alt="tamadun" class="menubook"/>
+
+<table id="bookDetail">
+<tr>
+<td class="detail">Tamadun Islam</td>
+</tr>
+<tr>
+<td class="detail">Author: Osman Bakar</td>
+</tr>
+<tr>
+<td class="detail">Publisher Year: 2009</td>
+</tr>
+<tr>
+<td class="detail">Seller: Ng Lai Lee</td>
+</tr>
+<tr>
+<td class="detail">Price: RM 10.00</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="BUY" title="Click to Buy" id="buy"/>
+<script type="text/javascript">
+	document.getElementById("buy").onclick = function() {
+		location.href = "payment1.html";
+	};
+</script>
+
+<input type="button" value="Add to Cart" title="Click to add to cart" id="cart"/>
+<script type="text/javascript">
+	document.getElementById("cart").onclick = function() {
+		location.href = "cart1.html";
+	};
+</script>
+</td>
+</tr>
+
+
+</table>
+
+<table id="contactMethod">
+
+<tr>
+<td>Contact Seller: </td>
+<td>
+	<img src="fbLogo.jpg" alt="fbLogo" class="method" usemap="#fbLogo"/>
+	<map name="fbLogo">
+	<area shape="rect" coords="0,0,35,35" href="https://www.facebook.com/yujune.tee?epa=SEARCH_BOX" target="_blank" alt="book2" title="Facebook"/>
+	</map>
+</td>
+
+<td>
+	<img src="twitLogo.jpg" alt="twitLogo" class="method" usemap="#twitLogo"/>
+	<map name="twitLogo">
+	<area shape="rect" coords="0,0,35,35" href="https://twitter.com/wongrencas" target="_blank" alt="book2" title="Twitter"/>
+	</map>
+</td>
+
+<td>
+	<img src="instLogo.jpg" alt="instLogo" class="method" usemap="#instLogo"/>
+	<map name="instLogo">
+	<area shape="rect" coords="0,0,35,35" href="https://www.instagram.com/k.wai09/" target="_blank" alt="book2" title="Instagram"/>
+	</map>
+</td>
+</tr>
+
+</table>
+<br/>
+<hr/>
+
+
+<!---------------------- Table at bottom------------------------------->
+
+<h2>Top 3 Popular Book</h2>
+<table id="bottom" align="center">
+
+<tr id="top" align="center">
+<td>Top 1</td>
+<td>Top 2</td>
+<td>Top 3</td>
+</tr>
+
+<tr align="center">
+<td>
+<img src="tamadun.jpg" class="popular" alt="tamadun" usemap="#book1" />
+<map name="book1">
+<area shape="rect" coords="46,0,246,300" href="book1.html" alt="book1" title="Click to view" />
+</map>
+</td>
+
+<td>
+<img src="english.jpg" class="popular" alt="English for Malaysian" usemap="#book2" />
+<map name="book2">
+<area shape="rect" coords="46,0,246,300" href="book2.html" alt="book2" title="Click to view"/>
+</map>
+</td>
+
+<td>
+<img src="probability.jpg" class="popular" alt="Probability" usemap="#book3" />
+<map name="book3">
+<area shape="rect" coords="46,0,246,300" href="book3.html" alt="book3" title="Click to view"/>
+</map>
+</td>
+</tr>
+
+
+<tr align="center" class="bookName">
+<td><a href="book1.html" title="Click me">Tamadun Islam</a></td>
+<td><a href="book2.html" title="Click me">English For Malaysian</a></td>
+<td><a href="book3.html" title="Click me">Probability And Statistic</a></td>
+</tr>
+
+<tr align="center">
+<td>RM 10.00</td>
+<td>RM 12.00</td>
+<td>RM 15.00</td>
+</tr>
+
+</table>
+<br/><br/>
+<hr/>
+</div>
+</body>
+
+
+
+
+
+</html>

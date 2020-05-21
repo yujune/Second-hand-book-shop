@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>homeVideo</title>
+<style type="text/css">
+	.mySlides {display:none;}
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="homeSlide.css"/>
+<script type="text/javascript" src="homeJava.js"></script>
+</head>
+
+<body>
+<div id="outerContainer" style="width:100%;height: 550px">
+
+	<div class="mySlides" >	
+	<div class="numbertext">1/3</div>
+	<img src="books.png" style="width:100%;height:500px" alt=""/>
+	<div class="text" style="color: white"><span style="color: black">Best </span>price, best quality</div>
+	</div>
+	
+	<div class="mySlides">	
+	<div class="numbertext">2/3</div>
+	<img  src="books2.jpg" style="width:100%;height:500px" alt=""/>
+	<div class="text" style="color: white">We sell all kind of TARUC second hand books.</div>
+	</div>
+
+	<div class="mySlides">	
+	<div class="numbertext">3/3</div>
+	<img  src="people.jpg" style="width:100%;height:500px" alt=""/>
+	<div class="text">This is why we read!</div>
+	</div>
+	<button class="buttons" onclick="plusIndex(-1)" id="buttons1">&#10094;</button>
+	<button class="buttons" onclick="plusIndex(1)" id="buttons2">&#10095;</button>
+	
+	<div id="dotDiv" >
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+
+</div>
+
+<script type="text/javascript">
+	
+	carousel(0);
+	autoslide();
+	
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link type="text/css" rel="stylesheet" href="contactUsStyle.css"/>
+
+<title>Contact Us</title>
+
+</head>
+
+<body>
+
+
+<h1>Contact Us</h1>
+
+<form>
+	<fieldset>
+		<legend>Feedback</legend>		
+		<table id="formTable">
+			<tr>
+				<td> <label for="firstName" class="lebaling">First Name:</label> </td>
+				<td  style="width:200px"> <input type="text" name="firstName" id="firstName"/> </td>
+				<td> <label for="lastName" class="lebaling">Last Name:</label></td>
+				<td> <input type="text" name="lastName" id="lastName"/></td>	
+			</tr>
+			
+			<tr>
+				<td class="lebaling"><label for="email">Email:</label></td>
+				<td><input type="text" name="email" id="email" required="required"/></td>
+			</tr>
+			
+			<tr>
+				<td class="lebaling">Gender:</td>
+				<td><input type="radio" name="gender"/>Male<input type="radio" name="gender"/>Female</td>
+			</tr>
+			
+			<tr>
+				<td class="lebaling">State:</td>
+				<td>
+					<select>
+						<option value="Negeri Sembilan">Negeri Sembilan</option>
+						<option value="Pahang">Pahang</option>
+						<option value="Kelantan">Kelantan</option>
+						<option value="Selangor" selected="selected">Selangor</option>
+						<option value="Johor">Johor</option>
+						<option value="Penang">Penang</option>
+						<option value="Sabah">Sabah</option>
+						<option value="Sarawak">Sarawak</option>
+						<option value="Kedah">Kedah</option>
+						<option value="Perak">Perak</option>
+						<option value="Melacca">Melacca</option>
+						<option value="Terengganu">Terengganu</option>
+						<option value="Perlis">Perlis</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td rowspan="3"><label for="comments" class="lebaling">Comments:</label></td>
+				<td colspan="3" rowspan="3"><textarea name="comments" id="comments">Leave your comments here!</textarea></td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+
+			<tr>
+				<td colspan="4"><input type="checkbox" required="required"/> I agree with the terms and conditions</td>
+			</tr>
+			
+			<tr>
+			<td colspan="3" class="cancelButton"><input class="buttons" type="reset" value="Cancel"/></td>
+			<td ><input class="buttons" type="submit" value="Submit" /></td>
+			</tr>
+		</table>
+		
+		
+	</fieldset>
+
+
+
+</form> 
+
+<div id="secDiv">
+<h3>Dont'worry, there is always an alternative way</h3>
+<h3>to contact</h3>
+<h3>our team for more informations.</h3>
+<table id="contactTable" cellspacing="0px">
+	<thead>
+		<tr><th style="border:1px black solid" colspan="2" >Other ways to contact</th></tr>
+	</thead>
+	
+	<tbody>
+		<tr><td class="imageCell"><img src="phone.jpg" alt="phone picture"/></td><td class="imageCell"><img  src="email.jpg" alt="email picture"/></td></tr>
+		<tr><td>03-33331233</td><td><a href="mailto:buybestbooks.com.my">buybestbooks.com.my</a></td></tr>
+	</tbody>
+</table>
+
+</div>
+
+
+
+</body>
+
+</html>
